@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>72meg - 自己紹介</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&family=Comfortaa:wght@300;400;500;700&family=Klee+One:wght@400;600&family=Zen+Maru+Gothic:wght@300;400;500;700;900&family=Chicle&family=Fredoka:wght@300;400;500;600;700&family=Bubblegum+Sans&family=Nunito:wght@200;300;400;500;600;700;800;900&family=Quicksand:wght@300;400;500;600;700&family=Varela+Round&family=Rubik:wght@300;400;500;600;700;800;900&family=Rounded+M+Plus+1c:wght@100;300;400;500;700;800;900&family=M+PLUS+Rounded+1c:wght@100;300;400;500;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- 𝐍𝐨𝐰𝐋𝐨𝐚𝐝𝐢𝐧𝐠 -->
+    <div id="loading-screen">
+        <div class="loading-container">
+            <div class="cloud cloud-1"></div>
+            <div class="cloud cloud-2"></div>
+            <div class="cloud cloud-3"></div>
+            <div class="loading-angel">
+                <div class="halo"></div>
+                <div class="wings">
+                    <div class="wing wing-left"></div>
+                    <div class="wing wing-right"></div>
+                </div>
+                <div class="body"></div>
+            </div>
+            <div class="loading-text">
+                <span>𝐍</span>
+                <span>𝐨</span>
+                <span>𝐰</span>
+                <span>𝐋</span>
+                <span>𝐨</span>
+                <span>𝐚</span>
+                <span>𝐝</span>
+                <span>𝐢</span>
+                <span>𝐧</span>
+                <span>𝐠</span>
+            </div>
+            <div class="loading-progress">
+                <div class="progress-bar"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- BGM制御 -->
+    <div id="bgm-control">
+        <audio id="bgm" loop>
+            <source src="BGM.mp3" type="audio/mpeg">
+        </audio>
+        <button id="bgm-toggle" onclick="toggleBGM()">
+            <i class="fas fa-music"></i>
+        </button>
+    </div>
+
+    <!-- メインコンテンツ -->
+    <div id="main-content">
+        <!-- ヒーローセクション -->
+        <section id="hero" class="section">
+            <div class="floating-elements">
+                <div class="floating-heart heart-1">💕</div>
+                <div class="floating-heart heart-2">✨</div>
+                <div class="floating-heart heart-3">🎀</div>
+                <div class="floating-heart heart-4">🌸</div>
+                <div class="floating-heart heart-5">💖</div>
+                <div class="floating-heart heart-6">☁️</div>
+            </div>
+            
+            <div class="hero-content">
+                <div class="profile-container animate-on-scroll">
+                    <div class="profile-image-wrapper">
+                        <div class="profile-glow"></div>
+                        <div class="profile-image">
+                            <div class="avatar">🎮</div>
+                        </div>
+                        <div class="profile-rings">
+                            <div class="ring ring-1"></div>
+                            <div class="ring ring-2"></div>
+                            <div class="ring ring-3"></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="name-section animate-on-scroll delay-1">
+                    <h1 class="main-name">
+                        <span class="letter">7</span>
+                        <span class="letter">2</span>
+                        <span class="letter">m</span>
+                        <span class="letter">e</span>
+                        <span class="letter">g</span>
+                    </h1>
+                    <div class="subtitle">🧨 暇人ニート学生 🧨</div>
+                </div>
+
+                <div class="social-links animate-on-scroll delay-2">
+                    <a href="https://www.youtube.com/@" target="_blank" class="social-button youtube">
+                        <i class="fab fa-youtube"></i>
+                        <span>YouTube</span>
+                    </a>
+                    <a href="https://www.twitch.tv/mugi_midnight" target="_blank" class="social-button twitch">
+                        <i class="fab fa-twitch"></i>
+                        <span>Twitch</span>
+                    </a>
+                    <a href="https://x.com/Washin329" target="_blank" class="social-button twitter">
+                        <i class="fab fa-twitter"></i>
+                        <span>X (Twitter)</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="scroll-indicator">
+                <div class="scroll-text">Scroll</div>
+                <div class="scroll-arrow">↓</div>
+            </div>
+        </section>
+
+        <!-- 自己紹介セクション -->
+        <section id="about" class="section">
+            <div class="section-bg">
+                <div class="cloud-bg cloud-bg-1"></div>
+                <div class="cloud-bg cloud-bg-2"></div>
+                <div class="cloud-bg cloud-bg-3"></div>
+            </div>
+            
+            <div class="container">
+                <h2 class="section-title animate-on-scroll">
+                    <span class="title-icon">👴</span>
+                    About Me
+                    <span class="title-decoration"></span>
+                </h2>
+                
+                <div class="about-grid">
+                    <div class="about-card animate-on-scroll delay-1">
+                        <div class="card-icon">🎂</div>
+                        <h3>𝐀𝐠𝐞</h3>
+                        <p>17</p>
+                    </div>
+                    
+                    <div class="about-card animate-on-scroll delay-2">
+                        <div class="card-icon">📅</div>
+                        <h3>𝐁𝐢𝐫𝐭𝐡𝐝𝐚𝐲</h3>
+                        <p>2007.11.15</p>
+                    </div>
+                    
+                    <div class="about-card animate-on-scroll delay-3">
+                        <div class="card-icon">🚺</div>
+                        <h3>𝐆𝐞𝐧𝐝𝐞𝐫</h3>
+                        <p>👨</p>
+                    </div>
+                    
+                    <div class="about-card animate-on-scroll delay-4">
+                        <div class="card-icon">🎮</div>
+                        <h3>𝐇𝐨𝐛𝐛𝐢𝐞𝐬
+</h3>
+                        <p>ゲーム、音楽</p>
+                    </div>
+                </div>
+                
+                <div class="personality-section animate-on-scroll delay-5">
+                    <div class="personality-card">
+                        <div class="personality-icon">😆</div>
+                        <h3>たまーに頑張るニート系配信者！！</h3>
+                        <p>学業よりバイト、金のためにバイトを✨</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 配信情報セクション -->
+        <section id="streaming" class="section">
+            <div class="container">
+                <h2 class="section-title animate-on-scroll">
+                    <span class="title-icon">🎬</span>
+                    Streaming
+                    <span class="title-decoration"></span>
+                </h2>
+                
+                <div class="streaming-content">
+                    <div class="streaming-card animate-on-scroll delay-1">
+                        <div class="card-header">
+                            <i class="fab fa-youtube"></i>
+                            <h3>YouTube</h3>
+                        </div>
+                        <p>メインの配信プラットフォーム！(ほぼ雑談メイン)</p>
+                        <a href="https://www.youtube.com/@mugi_midnight" target="_blank" class="stream-button">
+                            <span>チャンネルを見る</span>
+                            <i class="fas fa-external-link-alt"></i>
+                        </a>
+                    </div>
+                    
+                    <div class="streaming-card animate-on-scroll delay-2">
+                        <div class="card-header">
+                            <i class="fab fa-twitch"></i>
+                            <h3>Twitch</h3>
+                        </div>
+                        <p>Twitchでも配信中！(コメントは基本読みません、めんどくさいです)</p>
+                        <a href="https://www.twitch.tv/mugi_midnight" target="_blank" class="stream-button">
+                            <span>配信を見る</span>
+                            <i class="fas fa-external-link-alt"></i>
+                        </a>
+                    </div>
+                    
+                    <div class="streaming-card animate-on-scroll delay-3">
+                        <div class="card-header">
+                            <i class="fab fa-twitter"></i>
+                            <h3>X (Twitter)</h3>
+                        </div>
+                        <p>日常のつぶやきや配信のお知らせはこちらから！！</p>
+                        <a href="https://x.com/mugi_midnight?s=11" target="_blank" class="stream-button">
+                            <span>フォローする</span>
+                            <i class="fas fa-external-link-alt"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- フッター -->
+        <footer id="footer" class="section">
+            <div class="container">
+                <div class="footer-content animate-on-scroll">
+                    <div class="footer-angel">
+                        <div class="angel-emoji">👴</div>
+                        <div class="angel-message">ここまで見てくれてさんくす</div>
+                    </div>
+                    <div class="footer-links">
+                        <a href="https://www.youtube.com/@mugi_midnight" target="_blank">YouTube</a>
+                        <a href="https://www.twitch.tv/mugi_midnight" target="_blank">Twitch</a>
+                        <a href="https://x.com/mugi_midnight?s=11" target="_blank">X (Twitter)</a>
+                    </div>
+                    <div class="copyright">© 2025 むぎ All rights reserved.</div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- パーティクルシステム -->
+    <div id="particles"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
